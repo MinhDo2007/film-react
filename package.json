@@ -11,6 +11,23 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^3.4.10",
+    "@storybook/addon-actions": "^3.4.10",
+    "@storybook/addon-knobs": "^3.4.10",
+    "@storybook/addon-links": "^3.4.10",
+    "@storybook/addon-notes": "^3.4.10",
+    "@storybook/addon-options": "^3.4.10",
+    "@storybook/addons": "^3.4.10",
+    "@storybook/react": "^3.4.10",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "recompose": "^0.28.2",
+    "storybook-readme": "^3.3.0",
+    "styled-components": "^3.4.2"
   }
 }
