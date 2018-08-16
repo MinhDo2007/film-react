@@ -20,12 +20,6 @@
 yarn start
 ```
 
-### Electron
-
-```
-yarn start-electron
-```
-
 > IMPORTANT: Make sure that `NODE_ENV` is set to `development`
 
 ## Lint
@@ -52,20 +46,6 @@ yarn lint:js
 yarn format
 ```
 
-## Analyze webpack production bundles
-
-### Start web server
-
-```
-yarn analyze:start
-```
-
-### Generate a static report HTML
-
-```
-yarn analyze:static
-```
-
 ## Test
 
 ```
@@ -78,11 +58,6 @@ With watch mode:
 yarn test -w
 ```
 
-### Generate test coverage report
-
-```
-yarn coverage
-```
 
 ### Type checks
 

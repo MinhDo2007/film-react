@@ -13,23 +13,21 @@ const StyledAvatar = styled(Avatar)`
 `
 
 story('atoms/Avatar', { readme })
-  .add(
-    'Default', () => (
-      <Avatar
-        aria-label={'text'}
-        alt={'text'}
-        onClick={action('onClick')}
-        src={text('src', 'http://placekitten.com/g/640/640')}
-        role={text('role', 'button')}
-      />
-    ))
-  .add(
-    'styled(Avatar)', () => (
-      <StyledAvatar
-        aria-label={'text'}
-        alt={'text'}
-        onClick={action('onClick')}
-        src={text('src', 'http://placekitten.com/g/640/640')}
-        role={text('role', 'button')}
-      />
-    ))
+  .add('Default', () => (
+    <Avatar
+      aria-label="text"
+      alt="text"
+      onClick={action('onClick')}
+      src={text('src', 'http://placekitten.com/g/640/640')}
+      role={text('role', 'button')}
+    />
+  ))
+  .add('styled(Avatar)', () => (
+    <StyledAvatar
+      aria-label="text"
+      alt="text"
+      onClick={action('onClick')}
+      src={text('src', 'http://placekitten.com/g/640/640')}
+      role={text('role', 'button')}
+    />
+  ))

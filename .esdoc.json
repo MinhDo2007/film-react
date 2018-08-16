@@ -1,0 +1,27 @@
+{
+  "source": "./src",
+  "destination": "./dist/docs",
+  "includes": ["\\.js$"],
+  "excludes": ["^components/.*\\.jsx?$"],
+  "plugins": [
+    {
+      "name": "esdoc-standard-plugin",
+      "option": {
+        "lint": { "enable": false },
+        "typeInference": { "enable": true },
+        "unexportedIdentifier": { "enable": true }
+      }
+    },
+    { "name": "esdoc-ecmascript-proposal-plugin", "option": { "all": true } },
+    { "name": "esdoc-jsx-plugin" },
+    { "name": "esdoc-react-plugin" },
+    { "name": "esdoc-flow-type-plugin" },
+    {
+      "name": "esdoc-importpath-plugin",
+      "option": {
+        "stripPackageName": true,
+        "replaces": [{ "from": "^src/", "to": "" }]
+      }
+    }
+  ]
+}
