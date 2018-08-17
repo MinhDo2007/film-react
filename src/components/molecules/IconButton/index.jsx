@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { type Node } from 'react'
 import MaterialIconButton from '@material-ui/core/IconButton'
 
 export type Props = {|
