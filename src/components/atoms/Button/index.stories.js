@@ -7,14 +7,30 @@ import Button from '.'
 
 const style = {
   color: 'red',
-  backgroundColor: 'yellow'
-};
+  backgroundColor: 'yellow',
+}
 
 story('atoms/Button', { readme })
   .add('Default', () => (
     <Button
-      variant={selectV2('variant',['text', 'flat', 'outlined', 'contained', 'raised', 'fab', 'extendedFab',], 'contained')}
-      color={selectV2('color', ['default', 'inherit', 'primary', 'secondary'], 'default')}
+      variant={selectV2(
+        'variant',
+        [
+          'text',
+          'flat',
+          'outlined',
+          'contained',
+          'raised',
+          'fab',
+          'extendedFab',
+        ],
+        'contained'
+      )}
+      color={selectV2(
+        'color',
+        ['default', 'inherit', 'primary', 'secondary'],
+        'default'
+      )}
       size={selectV2('size', ['small' | 'medium' | 'large'], 'small')}
       onClick={action('onClick')}
       text={text('text', 'Button')}
@@ -24,10 +40,21 @@ story('atoms/Button', { readme })
   ))
   .add('style Overrides', () => (
     <Button
-      variant={selectV2('variant',['text', 'flat', 'outlined', 'contained', 'raised', 'fab', 'extendedFab',], 'contained')}
+      variant={selectV2(
+        'variant',
+        [
+          'text',
+          'flat',
+          'outlined',
+          'contained',
+          'raised',
+          'fab',
+          'extendedFab',
+        ],
+        'contained'
+      )}
       onClick={action('onClick')}
       style={style}
       text={text('text', 'Button')}
     />
   ))
-
