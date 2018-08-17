@@ -19,7 +19,6 @@ export type Props = {|
 |} & ExternalProps
 
 export type ExternalProps = {
-  style?: Object,
   text?: string,
 }
 
@@ -27,7 +26,6 @@ const Button = ({
   onClick,
   variant,
   color,
-  style,
   disabled,
   href,
   size,
@@ -37,7 +35,6 @@ const Button = ({
     color={color}
     variant={variant}
     onClick={onClick}
-    style={style}
     disabled={disabled}
     href={href}
     size={size}
