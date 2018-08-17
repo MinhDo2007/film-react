@@ -3,6 +3,7 @@
 <PROJECT_ROOT>/.storybook/*
 <PROJECT_ROOT>/.git/*
 <PROJECT_ROOT>/scripts/module_templates/*
+.*/node_modules/.*
 
 [include]
 
@@ -11,8 +12,6 @@
 [lints]
 
 [options]
-module.system.node.resolve_dirname=node_modules
-module.system.node.resolve_dirname=src
 esproposal.class_static_fields=enable
 esproposal.class_instance_fields=enable
 esproposal.export_star_as=enable
