@@ -48,11 +48,11 @@ const style = {
 
 |  propName  | propType | defaultValue | isRequired | description                                      |
 | :--------: | :------: | :----------: | :--------: | ------------------------------------------------ |
-| variant    |  string  |      -       |     -      | type button                                      |
+| variant    |  string  | 'contained'  |     -      | type button                                      |
 | color      |  string  |      -       |     -      | color button                                     |
 | size       |  string  |   'small'    |     -      | size button                                      |
 | onClick    | Function |      -       |     -      | Callback function when user clicks on the Button |
 | text       |  string  |      -       |     -      | text button                                      |
-| disabled   | boolean  |      false   |     -      | status button                                    |
+| disabled   | boolean  |    false     |     -      | status button                                    |
 | href       | string   |      -       |     -      | href button                                      |
 | styled     | object   |      -       |     -      | custom styled button                             |

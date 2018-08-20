@@ -3,7 +3,7 @@
 ## Usage
 
 ```js
-import IconButton from 'components/atoms/IconButton'
+import IconButton from 'components/molecules/IconButton'
 ```
 
 ### Default Usage
