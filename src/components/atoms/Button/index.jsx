@@ -24,7 +24,7 @@ export type ExternalProps = {
 
 const Button = ({
   onClick,
-  variant,
+  variant = 'contained',
   color,
   disabled,
   href,
